@@ -14,6 +14,11 @@
 		30CAEC721AB7D5F000F36AE8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30CAEC711AB7D5F000F36AE8 /* Images.xcassets */; };
 		30CAEC751AB7D5F000F36AE8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30CAEC731AB7D5F000F36AE8 /* LaunchScreen.xib */; };
 		30CAEC811AB7D5F000F36AE8 /* ShenZhenActivityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CAEC801AB7D5F000F36AE8 /* ShenZhenActivityTests.m */; };
+		30CAEC8D1AB7D71C00F36AE8 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CAEC8B1AB7D71C00F36AE8 /* HomeViewController.m */; };
+		30CAEC8E1AB7D71C00F36AE8 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30CAEC8C1AB7D71C00F36AE8 /* HomeViewController.xib */; };
+		30D3BB441AB9461D003E3536 /* LeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D3BB431AB9461D003E3536 /* LeftView.m */; };
+		30D3BB481AB95743003E3536 /* LeftTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D3BB461AB95743003E3536 /* LeftTableViewCell.m */; };
+		30D3BB491AB95743003E3536 /* LeftTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30D3BB471AB95743003E3536 /* LeftTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,14 @@
 		30CAEC7A1AB7D5F000F36AE8 /* ShenZhenActivityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShenZhenActivityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30CAEC7F1AB7D5F000F36AE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30CAEC801AB7D5F000F36AE8 /* ShenZhenActivityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShenZhenActivityTests.m; sourceTree = "<group>"; };
+		30CAEC8A1AB7D71C00F36AE8 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		30CAEC8B1AB7D71C00F36AE8 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		30CAEC8C1AB7D71C00F36AE8 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		30D3BB421AB9461D003E3536 /* LeftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftView.h; sourceTree = "<group>"; };
+		30D3BB431AB9461D003E3536 /* LeftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftView.m; sourceTree = "<group>"; };
+		30D3BB451AB95743003E3536 /* LeftTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftTableViewCell.h; sourceTree = "<group>"; };
+		30D3BB461AB95743003E3536 /* LeftTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftTableViewCell.m; sourceTree = "<group>"; };
+		30D3BB471AB95743003E3536 /* LeftTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +98,14 @@
 				30CAEC691AB7D5F000F36AE8 /* AppDelegate.m */,
 				30CAEC6B1AB7D5F000F36AE8 /* ViewController.h */,
 				30CAEC6C1AB7D5F000F36AE8 /* ViewController.m */,
+				30CAEC8A1AB7D71C00F36AE8 /* HomeViewController.h */,
+				30CAEC8B1AB7D71C00F36AE8 /* HomeViewController.m */,
+				30CAEC8C1AB7D71C00F36AE8 /* HomeViewController.xib */,
+				30D3BB421AB9461D003E3536 /* LeftView.h */,
+				30D3BB431AB9461D003E3536 /* LeftView.m */,
+				30D3BB451AB95743003E3536 /* LeftTableViewCell.h */,
+				30D3BB461AB95743003E3536 /* LeftTableViewCell.m */,
+				30D3BB471AB95743003E3536 /* LeftTableViewCell.xib */,
 				30CAEC6E1AB7D5F000F36AE8 /* Main.storyboard */,
 				30CAEC711AB7D5F000F36AE8 /* Images.xcassets */,
 				30CAEC731AB7D5F000F36AE8 /* LaunchScreen.xib */,
@@ -199,9 +220,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30D3BB491AB95743003E3536 /* LeftTableViewCell.xib in Resources */,
 				30CAEC701AB7D5F000F36AE8 /* Main.storyboard in Resources */,
 				30CAEC751AB7D5F000F36AE8 /* LaunchScreen.xib in Resources */,
 				30CAEC721AB7D5F000F36AE8 /* Images.xcassets in Resources */,
+				30CAEC8E1AB7D71C00F36AE8 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +242,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30D3BB441AB9461D003E3536 /* LeftView.m in Sources */,
 				30CAEC6D1AB7D5F000F36AE8 /* ViewController.m in Sources */,
+				30D3BB481AB95743003E3536 /* LeftTableViewCell.m in Sources */,
 				30CAEC6A1AB7D5F000F36AE8 /* AppDelegate.m in Sources */,
 				30CAEC671AB7D5F000F36AE8 /* main.m in Sources */,
+				30CAEC8D1AB7D71C00F36AE8 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShenZhenActivity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShenZhenActivity/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +440,7 @@
 				30CAEC861AB7D5F000F36AE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30CAEC871AB7D5F000F36AE8 /* Build configuration list for PBXNativeTarget "ShenZhenActivityTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +449,7 @@
 				30CAEC891AB7D5F000F36AE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
