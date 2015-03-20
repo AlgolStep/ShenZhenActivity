@@ -7,6 +7,8 @@
 //
 
 #import "HomeViewController.h"
+#import "DetailViewController.h"
+#import "OrderPlaceViewController.h"
 
 
 @interface HomeViewController ()
@@ -17,10 +19,25 @@
 {
     NSMutableArray *segmentButtonArray;
     NSArray *leftImageArray;
+    NSArray *leftTitleArray;
     CGFloat screenWidth;
     CGFloat screenHeight;
+    DetailViewController *detailVCtrl;
+    OrderPlaceViewController *orderPlaceVCtrl;
     
 }
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@""]
+                                           forBarMetrics:UIBarMetricsDefault];
+        self.navigationController.navigationBarHidden = YES;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -28,7 +45,13 @@
     self.leftTableView.delegate = self;
     screenWidth = [UIScreen mainScreen].bounds.size.width;
     screenHeight = [UIScreen mainScreen].bounds.size.height;
-
+    leftImageArray = @[@"left_activityCheck",@"left_orderPlace",@"left_myOrder",@"left_activitySign",@"left_expandFunction"];
+    leftTitleArray = @[@"活动查询",@"预约场地",@"我的预约",@"活动签到",@"拓展功能"];
+    
+    UIBarButtonItem *avatarButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"home_avatar"] style:UIBarButtonItemStyleDone target:self action:@selector(showLeftViewBtn:)];
+    
+    self.navigationController.navigationItem.leftBarButtonItem = avatarButton;
+     self.navigationController.navigationBarHidden = YES;
     CGRect leftViewFrame = CGRectMake(-screenWidth, 0, screenWidth, screenHeight);
     self.leftView.frame = leftViewFrame;
     [self.view addSubview:self.leftView];
@@ -54,6 +77,11 @@
         [self.segmentView addSubview:segmentButton];
     }
     [segmentButtonArray[0] setSelected:YES];
+    
+   detailVCtrl = [[DetailViewController alloc] initWithNibName:@"DetailViewController"
+                                                        bundle:nil];
+    orderPlaceVCtrl = [[OrderPlaceViewController alloc] initWithNibName:@"OrderPlaceViewController"
+                                                                 bundle:nil];
 }
 
 
@@ -76,10 +104,11 @@
     NSLog(@"the tableView width%f",tableView.frame.size.width);
     if (nil == cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(5, 5, 50, 50)];
-        imageView.image = [UIImage imageNamed:@"left_activityCheck"];
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 15, 30, 30)];
+        imageView.image = [UIImage imageNamed:leftImageArray[indexPath.row]];
         UILabel *lable = [[UILabel alloc] initWithFrame:CGRectMake(55, 5, 100, 50)];
-        lable.text = @"我的预约";
+        lable.text = leftTitleArray[indexPath.row];
+        lable.textColor = [UIColor whiteColor];
         [cell addSubview:lable];
         [cell addSubview:imageView];
     }
@@ -88,6 +117,29 @@
     
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self hideLeftView];
+    UIViewController *controller = nil;
+    switch (indexPath.row) {
+        case 0:
+            controller = detailVCtrl;
+            break;
+        case 1:
+            controller = orderPlaceVCtrl;
+            break;
+        case 2:
+            break;
+        case 3:
+            break;
+        case 4:
+            break;
+            
+        default:
+            break;
+    }
+    [self.navigationController pushViewController:controller animated:YES];
+}
 - (UITableViewCell*)costumTableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath*)indexPath
 {
     UITableViewCell * cell =  [[[NSBundle mainBundle] loadNibNamed:@"LeftTableViewCell" owner:nil options:nil] lastObject];

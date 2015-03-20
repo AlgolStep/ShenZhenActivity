@@ -21,7 +21,7 @@
                         <rect key="frame" x="95" y="4" width="132" height="57"/>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -31,6 +31,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="left_activityCheck" width="79" height="59"/>
+        <image name="left_activityCheck" width="34" height="34"/>
     </resources>
 </document>
