@@ -21,6 +21,7 @@
   
     LoginViewController *loginVCtrl = [[LoginViewController alloc] initWithNibName:@"LoginViewController"
                                                                             bundle:nil];
+ 
     self.window.rootViewController = loginVCtrl;
     return YES;
 }

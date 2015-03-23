@@ -24,9 +24,12 @@
 		30CAEC811AB7D5F000F36AE8 /* ShenZhenActivityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CAEC801AB7D5F000F36AE8 /* ShenZhenActivityTests.m */; };
 		30CAEC8D1AB7D71C00F36AE8 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CAEC8B1AB7D71C00F36AE8 /* HomeViewController.m */; };
 		30CAEC8E1AB7D71C00F36AE8 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30CAEC8C1AB7D71C00F36AE8 /* HomeViewController.xib */; };
+		30CF5A9E1ABFAF8D00465201 /* PlaceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CF5A9C1ABFAF8D00465201 /* PlaceDetailViewController.m */; };
+		30CF5A9F1ABFAF8D00465201 /* PlaceDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30CF5A9D1ABFAF8D00465201 /* PlaceDetailViewController.xib */; };
 		30D3BB441AB9461D003E3536 /* LeftView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D3BB431AB9461D003E3536 /* LeftView.m */; };
 		30D3BB481AB95743003E3536 /* LeftTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D3BB461AB95743003E3536 /* LeftTableViewCell.m */; };
 		30D3BB491AB95743003E3536 /* LeftTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30D3BB471AB95743003E3536 /* LeftTableViewCell.xib */; };
+		C49EC626D763ED12F2802EA2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FD0953B4EE4B389F551529E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FD0953B4EE4B389F551529E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B4C44F1ABBCA3700206229 /* OrderPlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderPlaceViewController.h; sourceTree = "<group>"; };
 		30B4C4501ABBCA3700206229 /* OrderPlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderPlaceViewController.m; sourceTree = "<group>"; };
 		30B4C4511ABBCA3700206229 /* OrderPlaceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderPlaceViewController.xib; sourceTree = "<group>"; };
@@ -68,11 +72,16 @@
 		30CAEC8A1AB7D71C00F36AE8 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		30CAEC8B1AB7D71C00F36AE8 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		30CAEC8C1AB7D71C00F36AE8 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		30CF5A9B1ABFAF8D00465201 /* PlaceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceDetailViewController.h; sourceTree = "<group>"; };
+		30CF5A9C1ABFAF8D00465201 /* PlaceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceDetailViewController.m; sourceTree = "<group>"; };
+		30CF5A9D1ABFAF8D00465201 /* PlaceDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceDetailViewController.xib; sourceTree = "<group>"; };
 		30D3BB421AB9461D003E3536 /* LeftView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftView.h; sourceTree = "<group>"; };
 		30D3BB431AB9461D003E3536 /* LeftView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftView.m; sourceTree = "<group>"; };
 		30D3BB451AB95743003E3536 /* LeftTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftTableViewCell.h; sourceTree = "<group>"; };
 		30D3BB461AB95743003E3536 /* LeftTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftTableViewCell.m; sourceTree = "<group>"; };
 		30D3BB471AB95743003E3536 /* LeftTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftTableViewCell.xib; sourceTree = "<group>"; };
+		31528634FF1ABA3DF6F224C7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CF5A276E92E3590D7C8EE5F9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C49EC626D763ED12F2802EA2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,12 +103,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16CBD687C96E269C784FD550 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FD0953B4EE4B389F551529E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		30CAEC581AB7D5F000F36AE8 = {
 			isa = PBXGroup;
 			children = (
 				30CAEC631AB7D5F000F36AE8 /* ShenZhenActivity */,
 				30CAEC7D1AB7D5F000F36AE8 /* ShenZhenActivityTests */,
 				30CAEC621AB7D5F000F36AE8 /* Products */,
+				747C8302567A58B98F7A54A6 /* Pods */,
+				16CBD687C96E269C784FD550 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +153,9 @@
 				30B4C4541ABBF40D00206229 /* OrderCostumTableViewCell.h */,
 				30B4C4551ABBF40D00206229 /* OrderCostumTableViewCell.m */,
 				30B4C4561ABBF40D00206229 /* OrderCostumTableViewCell.xib */,
+				30CF5A9B1ABFAF8D00465201 /* PlaceDetailViewController.h */,
+				30CF5A9C1ABFAF8D00465201 /* PlaceDetailViewController.m */,
+				30CF5A9D1ABFAF8D00465201 /* PlaceDetailViewController.xib */,
 				30D3BB421AB9461D003E3536 /* LeftView.h */,
 				30D3BB431AB9461D003E3536 /* LeftView.m */,
 				30D3BB451AB95743003E3536 /* LeftTableViewCell.h */,
@@ -172,6 +195,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		747C8302567A58B98F7A54A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31528634FF1ABA3DF6F224C7 /* Pods.debug.xcconfig */,
+				CF5A276E92E3590D7C8EE5F9 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30CAEC841AB7D5F000F36AE8 /* Build configuration list for PBXNativeTarget "ShenZhenActivity" */;
 			buildPhases = (
+				B1878F79B3283EA835362486 /* Check Pods Manifest.lock */,
 				30CAEC5D1AB7D5F000F36AE8 /* Sources */,
 				30CAEC5E1AB7D5F000F36AE8 /* Frameworks */,
 				30CAEC5F1AB7D5F000F36AE8 /* Resources */,
+				5E3FFD944937A5F7027C400B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,6 +291,7 @@
 				30B76A871ABA81460002CF9A /* DetailViewController.xib in Resources */,
 				30CAEC701AB7D5F000F36AE8 /* Main.storyboard in Resources */,
 				30CAEC751AB7D5F000F36AE8 /* LaunchScreen.xib in Resources */,
+				30CF5A9F1ABFAF8D00465201 /* PlaceDetailViewController.xib in Resources */,
 				30CAEC721AB7D5F000F36AE8 /* Images.xcassets in Resources */,
 				30B4C4531ABBCA3700206229 /* OrderPlaceViewController.xib in Resources */,
 				30B76A8C1ABA92340002CF9A /* LoginViewController.xib in Resources */,
@@ -273,6 +308,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5E3FFD944937A5F7027C400B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1878F79B3283EA835362486 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		30CAEC5D1AB7D5F000F36AE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -280,6 +348,7 @@
 			files = (
 				30B4C4521ABBCA3700206229 /* OrderPlaceViewController.m in Sources */,
 				30B76A8B1ABA92340002CF9A /* LoginViewController.m in Sources */,
+				30CF5A9E1ABFAF8D00465201 /* PlaceDetailViewController.m in Sources */,
 				30D3BB441AB9461D003E3536 /* LeftView.m in Sources */,
 				30CAEC6D1AB7D5F000F36AE8 /* ViewController.m in Sources */,
 				30D3BB481AB95743003E3536 /* LeftTableViewCell.m in Sources */,
@@ -407,6 +476,7 @@
 		};
 		30CAEC851AB7D5F000F36AE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31528634FF1ABA3DF6F224C7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShenZhenActivity/Info.plist;
@@ -418,6 +488,7 @@
 		};
 		30CAEC861AB7D5F000F36AE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF5A276E92E3590D7C8EE5F9 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ShenZhenActivity/Info.plist;

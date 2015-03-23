@@ -8,8 +8,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderPlaceViewController">
             <connections>
+                <outlet property="activityTableView" destination="Wgf-X1-o33" id="xpR-PG-9di"/>
                 <outlet property="scrollView" destination="kdO-20-VhO" id="bMY-VJ-7eA"/>
-                <outlet property="tableView" destination="UYp-C2-bIb" id="OnX-mQ-hWl"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -56,20 +56,19 @@
                         <constraint firstAttribute="height" constant="33" id="rDW-bW-th5"/>
                     </constraints>
                 </scrollView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="UYp-C2-bIb">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Wgf-X1-o33">
                     <rect key="frame" x="0.0" y="97" width="320" height="383"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="UYp-C2-bIb" secondAttribute="height" multiplier="320:383" id="4D1-w7-5hu"/>
+                        <constraint firstAttribute="width" secondItem="Wgf-X1-o33" secondAttribute="height" multiplier="320:383" id="EaF-5D-bin"/>
                     </constraints>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="6nl-Rl-xyV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="27" id="36l-Ay-N7r"/>
-                <constraint firstItem="UYp-C2-bIb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4Cu-Q2-R6B"/>
-                <constraint firstItem="UYp-C2-bIb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="97" id="54G-XC-UsK"/>
                 <constraint firstAttribute="trailing" secondItem="UhL-5Q-2wP" secondAttribute="trailing" id="BIQ-Ub-1yL"/>
+                <constraint firstAttribute="trailing" secondItem="Wgf-X1-o33" secondAttribute="trailing" id="Eg4-Gl-fWf"/>
                 <constraint firstAttribute="centerX" secondItem="zoC-hq-QHl" secondAttribute="centerX" id="EtO-PS-704"/>
                 <constraint firstAttribute="trailing" secondItem="kdO-20-VhO" secondAttribute="trailing" id="Gko-sm-nuN"/>
                 <constraint firstAttribute="centerX" secondItem="UhL-5Q-2wP" secondAttribute="centerX" id="I3F-Af-pSv"/>
@@ -78,16 +77,16 @@
                 <constraint firstItem="kdO-20-VhO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="M2m-gT-hPk"/>
                 <constraint firstItem="6nl-Rl-xyV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="OtQ-5P-yDH"/>
                 <constraint firstAttribute="trailing" secondItem="USA-6W-tUf" secondAttribute="trailing" id="XyA-uP-eYa"/>
-                <constraint firstAttribute="bottom" secondItem="UYp-C2-bIb" secondAttribute="bottom" id="YHD-sS-gDd"/>
+                <constraint firstAttribute="bottom" secondItem="Wgf-X1-o33" secondAttribute="bottom" id="ZJV-8f-US2"/>
                 <constraint firstItem="kdO-20-VhO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="ZXJ-et-cyC"/>
                 <constraint firstAttribute="centerX" secondItem="kdO-20-VhO" secondAttribute="centerX" id="eka-mk-eAe"/>
-                <constraint firstAttribute="trailing" secondItem="UYp-C2-bIb" secondAttribute="trailing" id="iLI-9z-ORp"/>
+                <constraint firstItem="Wgf-X1-o33" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="97" id="evU-zj-Gem"/>
                 <constraint firstItem="USA-6W-tUf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jqb-0o-rLw"/>
                 <constraint firstItem="UhL-5Q-2wP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="l5x-EV-9oH"/>
                 <constraint firstAttribute="bottom" secondItem="USA-6W-tUf" secondAttribute="bottom" id="r3F-Dz-ZwC"/>
                 <constraint firstItem="USA-6W-tUf" firstAttribute="top" secondItem="UhL-5Q-2wP" secondAttribute="bottom" id="rh9-Q8-x6j"/>
                 <constraint firstItem="zoC-hq-QHl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="19" id="uNm-Qh-VIO"/>
-                <constraint firstAttribute="centerX" secondItem="UYp-C2-bIb" secondAttribute="centerX" id="vBr-B6-g8E"/>
+                <constraint firstItem="Wgf-X1-o33" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zc5-yj-rRC"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
             <variation key="default">

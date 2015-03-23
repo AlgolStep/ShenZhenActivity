@@ -46,7 +46,7 @@
     screenWidth = [UIScreen mainScreen].bounds.size.width;
     screenHeight = [UIScreen mainScreen].bounds.size.height;
     leftImageArray = @[@"left_activityCheck",@"left_orderPlace",@"left_myOrder",@"left_activitySign",@"left_expandFunction"];
-    leftTitleArray = @[@"活动查询",@"预约场地",@"我的预约",@"活动签到",@"拓展功能"];
+    leftTitleArray = @[@"    活动查询",@"    预约场地",@"    我的预约",@"    活动签到",@"    拓展功能"];
     
     UIBarButtonItem *avatarButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"home_avatar"] style:UIBarButtonItemStyleDone target:self action:@selector(showLeftViewBtn:)];
     
@@ -80,8 +80,7 @@
     
    detailVCtrl = [[DetailViewController alloc] initWithNibName:@"DetailViewController"
                                                         bundle:nil];
-    orderPlaceVCtrl = [[OrderPlaceViewController alloc] initWithNibName:@"OrderPlaceViewController"
-                                                                 bundle:nil];
+    
 }
 
 
@@ -105,13 +104,14 @@
     NSLog(@"the tableView width%f",tableView.frame.size.width);
     if (nil == cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
-        CGFloat lableX = tableView.bounds.size.width-105;
+        CGFloat lableX = tableView.bounds.size.width;
         CGFloat lableY = (tableView.bounds.size.height/5-50)/2;
         CGFloat imageX = tableView.bounds.size.width-150;
         CGFloat imageY = (tableView.bounds.size.height/5-30)/2;
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, imageY, 30, 30)];
         imageView.image = [UIImage imageNamed:leftImageArray[indexPath.row]];
-        UILabel *lable = [[UILabel alloc] initWithFrame:CGRectMake(lableX,lableY, 100, 50)];
+        UILabel *lable = [[UILabel alloc] initWithFrame:CGRectMake(0,lableY, lableX, 50)];
+        lable.textAlignment = NSTextAlignmentCenter;
         lable.text = leftTitleArray[indexPath.row];
         lable.textColor = [UIColor whiteColor];
         [cell addSubview:lable];
@@ -131,6 +131,8 @@
             controller = detailVCtrl;
             break;
         case 1:
+            orderPlaceVCtrl = [[OrderPlaceViewController alloc] initWithNibName:@"OrderPlaceViewController"
+                                                                         bundle:nil];
             controller = orderPlaceVCtrl;
             break;
         case 2:
