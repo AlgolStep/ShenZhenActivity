@@ -89,7 +89,8 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 60;
+    CGFloat height = tableView.bounds.size.height/5;
+    return height;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -104,9 +105,13 @@
     NSLog(@"the tableView width%f",tableView.frame.size.width);
     if (nil == cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
-        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 15, 30, 30)];
+        CGFloat lableX = tableView.bounds.size.width-105;
+        CGFloat lableY = (tableView.bounds.size.height/5-50)/2;
+        CGFloat imageX = tableView.bounds.size.width-150;
+        CGFloat imageY = (tableView.bounds.size.height/5-30)/2;
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, imageY, 30, 30)];
         imageView.image = [UIImage imageNamed:leftImageArray[indexPath.row]];
-        UILabel *lable = [[UILabel alloc] initWithFrame:CGRectMake(55, 5, 100, 50)];
+        UILabel *lable = [[UILabel alloc] initWithFrame:CGRectMake(lableX,lableY, 100, 50)];
         lable.text = leftTitleArray[indexPath.row];
         lable.textColor = [UIColor whiteColor];
         [cell addSubview:lable];
